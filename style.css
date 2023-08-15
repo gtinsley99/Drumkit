@@ -19,7 +19,7 @@ body{
     background-color: rgba(233, 150, 122, 0.705);
     box-shadow: 2px 2px;
     transition: 0.5s;    
-}
+} 
 
 .soundLetter:hover{
     scale: 1.05;
