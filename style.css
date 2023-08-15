@@ -7,7 +7,6 @@ body{
     margin: 50px;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .soundLetter{
@@ -34,4 +33,92 @@ body{
 img{
     border: 3px solid #333333;
     border-radius: 5%;
+    max-width: 80%;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1550px){
+    #soundBtns{
+        display: grid;
+        row-gap: 10px;
+    }
+    
+    #boom{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #clap{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #hihat{
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #kick{
+        grid-row: 1;
+        grid-column: 4;
+    }
+    #openhat{
+        grid-row: 1;
+        grid-column: 5;
+    }
+    #ride{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #snare{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    #tink{
+        grid-row: 2;
+        grid-column: 3;
+    }
+    #tom{
+        grid-row: 2;
+        grid-column: 4;
+    }
+    @media only screen and (max-width: 930px) {
+        #soundBtns{
+            display: grid;
+            row-gap: 10px;
+        }
+        #boom{
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #clap{
+            grid-row: 1;
+            grid-column: 2;
+        }
+        #hihat{
+            grid-row: 1;
+            grid-column: 3;
+        }
+        #kick{
+            grid-row: 2;
+            grid-column: 1;
+        }
+        #openhat{
+            grid-row: 2;
+            grid-column: 2;
+        }
+        #ride{
+            grid-row: 2;
+            grid-column: 3;
+        }
+        #snare{
+            grid-row: 3;
+            grid-column: 1;
+        }
+        #tink{
+            grid-row: 3;
+            grid-column: 2;
+        }
+        #tom{
+            grid-row: 3;
+            grid-column: 3;
+        }
+    }
 }
