@@ -19,15 +19,10 @@ const snareAudio = document.getElementById("snareAudio");
 const tinkAudio = document.getElementById("tinkAudio");
 const tomAudio = document.getElementById("tomAudio");
 
-// soundBtns.array.forEach((letterSound) => {
-//     letterSound.addEventListener("click", (e) => {
-
-//     })
-// });
-
 boom.addEventListener("click", () => {
     boomAudio.load();
     boomAudio.play();
+    // boom.style.border = "5px solid green";
 })
 
 clap.addEventListener("click", () => {
@@ -63,25 +58,34 @@ tom.addEventListener("click", () => {
     tomAudio.play();
 })
 
-// document.addEventListener("keyPressed", () => {
-//     if (keyPressed == "a" || keyPressed == "A"){
-//     boomAudio.play();
-//     } else if (keyPressed == "s" || keyPressed == "S"){
-//         clapAudio.play();
-//     }else if (keyPressed == "d" || keyPressed == "D"){
-//         hihatAudio.play();
-//     }else if (keyPressed == "f" || keyPressed == "F"){
-//         kickAudio.play();
-//     }else if (keyPressed == "g" || keyPressed == "G"){
-//         openhatAudio.play();
-//     }else if (keyPressed == "h" || keyPressed == "H"){
-//         rideAudio.play();
-//     }else if (keyPressed == "j" || keyPressed == "J"){
-//         snareAudio.play();
-//     }else if (keyPressed == "k" || keyPressed == "K"){
-//         tinkAudio.play();
-//     }else if (keyPressed == "l" || keyPressed == "L"){
-//         tomAudio.play();
-//     }
-// })
+document.addEventListener("keydown", (e) => {
+    if (e.code == "KeyA"){
+        boomAudio.load();
+        boomAudio.play();
+    } else if (e.code == "KeyS"){
+        clapAudio.load();
+        clapAudio.play();
+    } else if (e.code == "KeyD"){
+        hihatAudio.load();
+        hihatAudio.play();
+    } else if (e.code == "KeyF"){
+        kickAudio.load();
+        kickAudio.play();
+    } else if (e.code == "KeyG"){
+        openhatAudio.load();
+        openhatAudio.play();
+    } else if (e.code == "KeyH"){
+        rideAudio.load();
+        rideAudio.play();
+    } else if (e.code == "KeyJ"){
+        snareAudio.load();
+        snareAudio.play();
+    } else if (e.code == "KeyK"){
+        tinkAudio.load();
+        tinkAudio.play();
+    } else if (e.code == "KeyL"){
+        tomAudio.load();
+        tomAudio.play();
+    }
+})
 
